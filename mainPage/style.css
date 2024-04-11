@@ -1,0 +1,526 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  color: #fff;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: url(/mainPage/assets/1244688.jpg);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  height: 100vh;
+  width: 100vw;
+  background-size: cover;
+  margin: 0;
+  padding: 0;
+}
+body::-webkit-scrollbar{
+  display: none;
+}
+body{
+    overflow-x: hidden;
+
+}
+
+.nav {
+  position: fixed;
+  width: 100%;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 4em;
+  z-index: 9;
+  background: #00000030;
+  backdrop-filter: blur(100px);
+}
+
+a {
+  text-decoration: none;
+  color: #ffffff;
+  padding: 0 1em;
+  font-family: "Poppins", sans-serif;
+  font-size: 13px;
+  font-weight: 500px;
+}
+
+.logo {
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  padding: 1em;
+  z-index: 10;
+}
+
+#login {
+  border: none;
+  background-color: #f67e68;
+  padding: 5px 10px;
+  border-radius: 5px;
+  color: #fff;
+  font-weight: 600;
+  transition: 0.3s linear;
+}
+
+#login:hover {
+  background-color: #ff4838;
+}
+.links {
+  transition: 0.3s linear;
+}
+.links:hover {
+  border: none;
+  background-color: #c1c1c1;
+  padding: 5px 10px;
+  border-radius: 5px;
+  color: #fff;
+  font-weight: 600;
+}
+.container {
+  width: 100%;
+  height: 100vh;
+  background: #000000;
+}
+/* .background-img {
+  background: url(/mainPage/assets/1244688.jpg);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  height: 100vh;
+  width: 100vw;
+  background-size: cover;
+} */
+.main-content {
+  width: 100%;
+  height: 100vh;
+  background-color: #00000008;
+  position: relative;
+  /* padding-left: 4em; */
+  overflow: hidden;
+  object-fit: cover;
+  /* margin-bottom: 50px; */
+}
+
+.bottomimg {
+  max-width: 80%;
+  z-index: 2;
+  position: absolute;
+  color: #f67e68;
+  display: flex;
+  bottom: 100px;
+  left: 120px;
+}
+.bottomimg h2 {
+  margin-right: 4em;
+}
+#bottomfirst {
+  color: #fff;
+}
+
+.imgtext {
+  color: white;
+  position: absolute;
+  z-index: 2;
+  top: 20%;
+  left: 120px;
+}
+
+.imgtext h1 {
+  font-size: 40px;
+}
+#second {
+  color: #f67e68;
+}
+img {
+  position: absolute;
+  z-index: 1;
+}
+.main-content img {
+  width: 100%;
+}
+img {
+  margin-bottom: 4em;
+}
+
+/* programs  */
+
+.program-container {
+  height: 100vh;
+  width: 100vw;
+  background-color: #00000008;
+  backdrop-filter: blur(10px);
+}
+
+.program-content {
+  height: 100%;
+  width: 100%;
+}
+.heading {
+  height: 25%;
+  width: 100%;
+  display: flex;
+  color: #fff;
+  justify-content: center;
+  align-items: center;
+  /* border: 1px solid black; */
+  border-radius: 15px;
+}
+.heading strong {
+  color: #f67e68;
+}
+
+.workout-cards {
+  height: 75%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.workout-cards .workout-card {
+  height: 420px;
+  width: 250px;
+  border: none;
+  margin: 10px 20px;
+  margin-bottom: 70px;
+  border-radius: 15px;
+  backdrop-filter: blur(10px);
+  background-color: rgba(120, 120, 120, 0.2);
+  transition: 0.4s linear;
+}
+
+.workout-card:hover {
+  transform: scale(1.1);
+}
+
+.workout-img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 40px;
+}
+.workout-card .workout-img i {
+  font-size: 100px;
+  color: #d7d7d7;
+}
+.workout-text {
+  padding: 30px;
+  color: #fff;
+}
+.workout-text h3,
+p {
+  margin-bottom: 30px;
+}
+.workout-text p {
+  font-size: 14px;
+  font-weight: 400;
+}
+.workout-text a {
+  color: #fff;
+  font-size: 20px;
+}
+
+/* listOfPrograms */
+.listOfPrograms {
+  min-height: 100vh;
+  width: 100vw;
+  backdrop-filter: blur(10px);
+  background-color: #00000008;
+  padding: 0 4em;
+}
+.cardioSection {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  padding: 0 4em;
+  align-items: center;
+  padding-top: 100px;
+  justify-content: space-between;
+}
+.cardio-part1 {
+  width: 45%;
+  height: 100%;
+}
+.cardio-part1 h2 {
+  border: 1px solid rgb(255, 255, 255);
+  padding: 10px 15px;
+  border-radius: 50px;
+  background-color: #00000030;
+  backdrop-filter: blur(10px);
+  display: inline;
+}
+.cardio-part1 ul {
+  padding-top: 40px;
+  list-style: circle;
+}
+.cardio-part1 ul li {
+  padding: 15px 0;
+}
+.cardio-part2 {
+  width: 55%;
+  height: 100%;
+  padding-left: 100px;
+}
+.cardio-part2 img {
+  height: 60vh;
+  width: 60vh;
+  border-radius: 15px;
+}
+
+/* --------------- */
+.strengthSection {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  padding: 0 4em;
+  align-items: center;
+  padding-top: 100px;
+  justify-content: space-between;
+}
+.strength-part2 {
+  width: 45%;
+  height: 100%;
+}
+.strength-part2 h2 {
+  border: 1px solid rgb(255, 255, 255);
+  padding: 10px 15px;
+  border-radius: 50px;
+  background-color: #00000030;
+  backdrop-filter: blur(10px);
+  display: inline;
+}
+.strength-part2 ul {
+  padding-top: 40px;
+  list-style: circle;
+}
+.strength-part2 ul li {
+  padding: 15px 0;
+}
+.strength-part1 {
+  width: 55%;
+  height: 100%;
+  padding-right: 100px;
+}
+.strength-part1 img {
+  height: 60vh;
+  width: 60vh;
+  border-radius: 15px;
+}
+
+/* ---------- */
+.fatlossSection {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  padding: 0 4em;
+  align-items: center;
+  padding-top: 100px;
+  justify-content: space-between;
+}
+.fat-part1 {
+  width: 45%;
+  height: 100%;
+}
+.fat-part1 h2 {
+  border: 1px solid rgb(255, 255, 255);
+  padding: 10px 15px;
+  border-radius: 50px;
+  background-color: #00000030;
+  backdrop-filter: blur(10px);
+  display: inline;
+}
+.fat-part1 ul {
+  padding-top: 40px;
+  list-style: circle;
+}
+.fat-part1 ul li {
+  padding: 15px 0;
+}
+.fat-part2 {
+  width: 55%;
+  height: 100%;
+  padding-left: 100px;
+}
+.fat-part2 img {
+  height: 60vh;
+  width: 60vh;
+  border-radius: 15px;
+}
+/* ------------ */
+.healthSection {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  padding: 0 4em;
+  align-items: center;
+  padding-top: 100px;
+  justify-content: space-between;
+}
+.health-part2 {
+  width: 55%;
+  height: 100%;
+  padding-right: 100px;
+}
+.health-part2 h2 {
+  border: 1px solid rgb(255, 255, 255);
+  padding: 10px 15px;
+  border-radius: 50px;
+  background-color: #00000030;
+  backdrop-filter: blur(10px);
+  display: inline;
+}
+.health-part2 ul {
+  padding-top: 40px;
+  list-style: circle;
+}
+.health-part2 ul li {
+  padding: 15px 0;
+}
+.health-part1 {
+  width: 45%;
+  height: 100%;
+  padding-right: 100px;
+}
+.health-part1 img {
+  height: 60vh;
+  width: 60vh;
+  border-radius: 15px;
+}
+
+/* membership  */
+
+.membership {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #00000008;
+  backdrop-filter: blur(10px);
+  color: #fff;
+  align-items: center;
+}
+.membership h1 font {
+  color: rgb(252, 105, 105);
+}
+
+.membership-cards {
+  gap: 15px;
+  height: 70%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.membership-cards .membership-card {
+  height: 350px;
+  width: 270px;
+  border: none;
+  padding: 40px;
+  border-radius: 15px;
+  backdrop-filter: blur(10px);
+  background-color: rgba(255, 255, 255, 0.269);
+}
+.membership-text:nth-child(4) {
+  margin-bottom: 50px;
+}
+.membership-link {
+  margin-left: 50px;
+  height: 40px;
+  width: auto;
+  border: none;
+  background-color: rgb(252, 105, 105);
+  padding: 10px 15px;
+  size: 20px;
+  border-radius: 20px;
+  color: #fff;
+}
+.membership-card {
+  transition: 0.5s linear;
+}
+.membership-card:hover {
+  transform: scale(1.1);
+}
+.membership-heading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  height: 20%;
+  width: 100%;
+  font-size: 28px;
+  margin: 15px 0;
+}
+
+.membership-text {
+  display: flex;
+  align-items: center;
+  margin: 15px 0;
+  font-size: 15px;
+  color: #fff;
+}
+.membership-text i {
+  margin-right: 15px;
+  color: rgb(43, 218, 136);
+}
+
+/* contact detail part of web page */
+.last {
+  width: 100%;
+  height: 35vh;
+  display: flex;
+  padding-left: 4em;
+  justify-content: center;
+  align-items: center;
+  background-color: #00000008;
+  backdrop-filter: blur(10px);
+}
+.contactLeft,
+.contactright {
+  width: 60%;
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  /* margin: 1em; */
+  gap: 20px;
+}
+.iconlist i {
+  margin-top: 10px;
+  font-size: 30px;
+  letter-spacing: -5px;
+  padding-right: 10px;
+}
+
+.contactright {
+  gap: 20px;
+}
+
+.rightDetails i {
+  height: 30px;
+  font-size: 30px;
+  padding-right: 20px;
+}
+.rightDetails {
+  display: flex;
+  align-items: center;
+}
+
+.footer-copyright {
+  color: rgb(150, 148, 148);
+  font-size: 0.75rem;
+  padding-bottom: 2rem;
+  /* margin-top: 2rem; */
+
+  padding-left: 4em;
+  padding-top: 1.15rem;
+  border-top: 1px solid #c1c1c2;
+  background-color: #00000008;
+  backdrop-filter: blur(10px);
+}

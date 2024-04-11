@@ -1,0 +1,248 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.nav {
+  position: fixed;
+  width: 100%;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 4em;
+  z-index: 9;
+  background: #fff;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+  padding: 0 1em;
+  font-family: "Poppins", sans-serif;
+  font-size: 13px;
+  font-weight: 500px;
+}
+
+
+.logo {
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  padding: 1em;
+  z-index: 10;
+}
+
+#login{
+  border: none;
+  background-color: #f67e68;
+  padding: 5px 10px;
+  border-radius: 5px;
+  color: #fff;
+  font-weight: 600;
+}
+
+#login:hover{
+  background-color: #ff4838;
+}
+
+.links:hover{
+  border: none;
+  background-color: #c1c1c1;
+  padding: 5px 10px;
+  border-radius: 5px;
+  color: #fff;
+  font-weight: 600;
+}
+.container {
+  width: 100%;
+  height: 100vh;
+  background: #fff;
+}
+
+.main-content {
+  width: 100%;
+  height: 100vh;
+  background: #fff;
+  position: relative;
+  padding-left: 4em;
+  overflow: hidden;
+  object-fit: cover;
+  margin-bottom: 50px;
+}
+
+.bottomimg{
+  max-width: 80%;
+  z-index: 2;
+  position: absolute;
+  color: #f67e68;
+  display: flex;
+  bottom: 100px;
+  left: 120px;
+}
+.bottomimg h2{
+  margin-right: 4em;
+}
+#bottomfirst{
+  color: #fff;
+}
+
+.imgtext{
+  color: white;
+  position: absolute;
+  z-index: 2;
+  top: 20%;
+  left: 120px;
+}
+
+.imgtext h1{
+  font-size: 40px;
+}
+#second{
+  color: #f67e68;
+}
+img{
+  position: absolute;
+  z-index: 1;
+}
+.main-content img {
+  width: 100%;
+}
+img {
+  margin-bottom: 4em;
+}
+
+/* part 2 */
+
+.testimonial-container{
+    background-color: #fff;
+    padding: 2rem;
+    margin: 0 auto;
+    max-width: 1280px;
+    height: 60vh;
+}
+.testimonial-content{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+.testimonial-title{
+    font-size: 1.875rem;
+    font-weight: bold;
+}
+
+.testimonial-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-gap: 2rem;
+}
+
+.testimonial-card{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid rgb(171, 163, 163);
+    border-radius: 1rem;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    padding: 1.2rem;
+    gap: 1rem;
+    height: 200px;
+    position: relative;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+
+.avtar{
+  display: flex;
+  gap: 100px;
+  align-items: center;
+  justify-content: start;
+}
+.testimonial-card:hover{
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rbga(0,0,0,0.2);
+    border: 1px solid blue;
+}
+
+.testimonial-avatar img{
+    height: 5rem;
+    width: 5rem;
+    top: 35%;
+}
+
+.testimonial-text{
+    color: #555;
+    font-size: 0.875rem;
+}
+
+.testimonial-name{
+    color: #f67e68;
+    font-size: 1rem;
+}
+
+.testimonial-desc{
+    font-size: 0.875rem;
+    color: #777;
+}
+
+/* contact detail part of web page */
+
+.last {
+  width: 100%;
+  height: 35vh;
+  display: flex;
+  padding-left: 4em;
+  justify-content: center;
+  align-items: center;
+}
+.contactLeft,
+.contactright {
+  width: 60%;
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  /* margin: 1em; */
+  gap: 20px;
+}
+.iconlist i {
+  margin-top: 10px;
+  font-size: 30px;
+  letter-spacing: -5px;
+  padding-right: 10px;
+}
+
+/* .iconlist .media{
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+} */
+
+/* .iconlist .media:hover{
+  transform: scale(1.05);
+} */
+.contactright {
+  gap: 20px;
+}
+
+.rightDetails i {
+  height: 30px;
+  font-size: 30px;
+  padding-right: 20px;
+}
+.rightDetails {
+  display: flex;
+  align-items: center;
+}
+
+.footer-copyright{
+    color: gray;
+    font-size: 0.75rem;
+    padding-bottom: 2rem;
+    margin-top: 2rem;
+    padding-left: 4em;
+    padding-top: 1.15rem;
+    border-top: 1px solid #c1c1c2;
+}

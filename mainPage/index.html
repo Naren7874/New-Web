@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EnerGya</title>
+    <link rel="icon" type="img/png" href="/mainPage/assets/logo.png" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+  </head>
+
+  <body>
+    <div class="mainBody">
+      <div class="nav">
+        <div class="left">
+          <a href="#home" class="links">HOME</a>
+          <a href="#programs-nav" class="links">PROGRAMS</a>
+        </div>
+        <div class="right">
+          <a href="#contact" class="links">CONTACT</a>
+          <a href="#plan-nav" class="links">PACKAGES</a>
+          <a href="/mainPage - Copy/login.html" id="login">LOG IN</a>
+        </div>
+      </div>
+      <div class="logo-container">
+        <h1 class="logo">EnerGya</h1>
+      </div>
+      <div class="container"></div>
+      <div class="main-content" id="home">
+        <img src="./assets/1244688.jpg" alt="gymphoto" />
+        <div class="imgtext">
+          <h1 id="first">
+            Fitness comes<br />
+            from
+          </h1>
+          <h1 id="second">Discipline</h1>
+        </div>
+        <div class="bottomimg">
+          <h2 id="bottomfirst">World Class Equiments</h2>
+          <h2>Best Trainers</h2>
+          <h2>Open 24×7</h2>
+        </div>
+      </div>
+      <div class="program-container" id="programs-nav">
+        <div class="program-content">
+          <div class="heading">
+            <h1>OUR PROGRAMS TO HELP YOU <strong>SHAPE</strong> YOUR BODY</h1>
+          </div>
+          <div class="workout-cards">
+            <div class="workout-card">
+              <div class="workout-img">
+                <i class="fa-solid fa-person-running"></i>
+              </div>
+              <div class="workout-text">
+                <h3>Cardio Training</h3>
+                <p>
+                  In this program, you are trained to do sequential moves in
+                  range of 20 until 30 minutes.
+                </p>
+                <a href="#cardio_link"
+                  >Join Now <i class="fa-solid fa-arrow-right"></i
+                ></a>
+              </div>
+            </div>
+            <div class="workout-card">
+              <div class="workout-img">
+                <i class="fa-solid fa-dumbbell"></i>
+              </div>
+              <div class="workout-text">
+                <h3>Strength Training</h3>
+                <p>
+                  In this program, you are trained to improve your strength
+                  through many exercises.
+                </p>
+                <a href="#strength_link"
+                  >Join Now <i class="fa-solid fa-arrow-right"></i
+                ></a>
+              </div>
+            </div>
+            <div class="workout-card">
+              <div class="workout-img">
+                <i class="fa-solid fa-fire-flame-curved"></i>
+              </div>
+              <div class="workout-text">
+                <h3>Fat Burning</h3>
+                <p>
+                  This program is suitable for you who wants to get rid of your
+                  fat and lose their weight.
+                </p>
+                <a href="#fatloss_link"
+                  >Join Now <i class="fa-solid fa-arrow-right"></i
+                ></a>
+              </div>
+            </div>
+            <div class="workout-card">
+              <div class="workout-img">
+                <i class="fa-solid fa-heart-pulse"></i>
+              </div>
+              <div class="workout-text">
+                <h3>Health Fitness</h3>
+                <p>
+                  This programs is designed for those who exercises only for
+                  their body fitness not body building.
+                </p>
+                <a href="#health_link"
+                  >Join Now <i class="fa-solid fa-arrow-right"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="listOfPrograms">
+        <div class="cardioSection" id="cardio_link">
+          <div class="cardio-part1">
+            <h2 class="cardio-h2">Cardio Training</h2>
+            <ul>
+              <li>Just 30min long</li>
+              <li>Warm up & workout included</li>
+              <li>
+                this will help full for Improve physical and mental well-being.
+              </li>
+              <li>Straighten your heart. and also boost your mood.</li>
+            </ul>
+          </div>
+          <div class="cardio-part2">
+            <div class="cardio-img">
+              <img src="./assets/cardio-img.jpg" alt="cardio-photo" />
+            </div>
+          </div>
+        </div>
+        <div class="strengthSection" id="strength_link">
+          <div class="strength-part1">
+            <div class="strength-img">
+              <img src="./assets/strength-img.png" alt="cardio-photo" />
+            </div>
+          </div>
+          <div class="strength-part2">
+            <h2 class="strength-h2">Strength Training</h2>
+            <ul>
+              <li>Fully fitted Powerlifting and strongman section</li>
+              <li>Olympic lifting platforms, weights, and bars</li>
+              <li>Dumbbell ranging 5 lbs - 250 lbs</li>
+            </ul>
+          </div>
+        </div>
+        <div class="fatlossSection" id="fatloss_link">
+          <div class="fat-part1">
+            <h2 class="fat-h2">Fat Burning</h2>
+            <ul>
+              <li>Complete weight loss workout & Diet programme(12 Weeks)</li>
+              <li>45 min Kettkebell and Bodyweight Workout for fat loss</li>
+              <li>Special mentor guidance</li>
+              <li>help full for Gain your personality and confidence</li>
+            </ul>
+          </div>
+          <div class="fat-part2">
+            <div class="fat-img">
+              <img src="./assets/fatloss-ing.jpg" alt="cardio-photo" />
+            </div>
+          </div>
+        </div>
+        <div class="healthSection" id="health_link">
+          <div class="health-part1">
+            <div class="health-img">
+              <img src="./assets/health-img.jpeg" alt="cardio-photo" />
+            </div>
+          </div>
+          <div class="health-part2">
+            <h2 class="health-h2">Health and fitness Training</h2>
+            <ul>
+              <li>
+                improve your brain health, help manage weight, reduce the risk
+                of disease.
+              </li>
+              <li>
+                strengthen bones and muscles, and improve your ability to do
+                everyday activities
+              </li>
+              <li>
+                Strength training also helps prevent falls, keep bones strong,
+                lower blood sugar levels, and improve balance.
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- membership -->
+      <div class="membership" id="plan-nav">
+        <br /><br />
+        <h1>START YOUR <font>FITNESS</font> JOURNEY</h1>
+
+        <div class="membership-cards">
+          <div class="membership-card">
+            <div class="membership-heading">1500 ₹</div>
+            <div class="membership-text">
+              <i class="fa-solid fa-circle-check"></i>
+              1 month Gym excess
+            </div>
+            <div class="membership-text">
+              <i class="fa-solid fa-circle-check"></i>
+              3 day personal training
+            </div>
+            <div class="membership-text">
+              <i class="fa-solid fa-circle-check"></i>
+              diet plan
+            </div>
+
+            <a class="membership-link" href="#">Join Now</a>
+          </div>
+          <div class="membership-card">
+            <div class="membership-heading">6000 ₹</div>
+            <div class="membership-text">
+              <i class="fa-solid fa-circle-check"></i>
+              6 month Gym excessz
+            </div>
+            <div class="membership-text">
+              <i class="fa-solid fa-circle-check"></i>
+              7 day personal training
+            </div>
+            <div class="membership-text">
+              <i class="fa-solid fa-circle-check"></i>
+              diet plan
+            </div>
+
+            <a class="membership-link" href="#">Join Now</a>
+          </div>
+          <div class="membership-card">
+            <div class="membership-heading">11000 ₹</div>
+            <div class="membership-text">
+              <i class="fa-solid fa-circle-check"></i>
+              1 year Gym excess
+            </div>
+            <div class="membership-text">
+              <i class="fa-solid fa-circle-check"></i>
+              30 day personal training
+            </div>
+            <div class="membership-text">
+              <i class="fa-solid fa-circle-check"></i>
+              diet plan
+            </div>
+            <a class="membership-link" href="#">Join Now</a>
+          </div>
+        </div>
+      </div>
+      <!-- last part   -->
+      <div class="last" id="contact">
+        <div class="contactLeft">
+          <h1>Ener Gya</h1>
+          <pre>
+Lorem ipsum dolor sit amet,
+consectetur adipiscing elit,sed 
+do eiusmod tempor incididunt urre.</pre
+          >
+          <div class="iconlist">
+            <a class="media" href="#"><i class="fa-brands fa-facebook"></i></a>
+            <a class="media" href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a class="media" href="#"><i class="fa-brands fa-youtube"></i></a>
+          </div>
+        </div>
+        <div class="contactright">
+          <h1>Contact</h1>
+          <div class="rightDetails">
+            <i class="fa-solid fa-location-dot"></i>
+            vv nagar anand,388120
+          </div>
+          <div class="rightDetails">
+            <i class="fa-solid fa-phone-volume"></i>
+            +91 7874748401
+          </div>
+          <div class="rightDetails">
+            <i class="fa-regular fa-envelope"></i>
+            energym@gmail.com
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-copyright">
+        © 2023 - Present EnerGia. All rights reserved.
+      </div>
+    </div>
+
+    <script>
+      ScrollTrigger.create({
+        animation: gsap.from(".logo", {
+          y: "50vh",
+          scale: 6,
+          yPercent: -50,
+        }),
+        scrub: true,
+        trigger: ".main-content",
+        start: "top bottom",
+        endTrigger: ".main-content",
+        end: "top center",
+      });
+    </script>
+  </body>
+</html>
